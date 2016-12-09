@@ -14,7 +14,7 @@ class ViewController: UIViewController {
    
     @IBAction func guessButtonPressed(_ sender: Any) {
         
-        let randomNum = Int(arc4random_uniform(11))
+        let randomNum = Int(arc4random_uniform(6))
         let guess = Int(fingerTextField.text!)
         
         //var output = resultLabel.text
@@ -25,12 +25,7 @@ class ViewController: UIViewController {
             resultLabel.text = "Nope, more fingers than that!"
         } else if guess! >= randomNum {
             resultLabel.text = "Nope, too many fingers"
-        } else if guess == 0 {
-            resultLabel.text = "Come on, you know she loves fingers"
-        } else {
-            resultLabel.text = "Something has gone wrong with the logic???"
         }
-        
         
     }
     
