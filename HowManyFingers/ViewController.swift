@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         //var output = resultLabel.text
         
         if guess == randomNum {
-            resultLabel.text = "Well Done! That is her fav number of fingers!"
+            resultLabel.text = "Well Done! That is my fav number of fingers!"
         } else if guess! <= randomNum {
             resultLabel.text = "Nope, more fingers than that!"
         } else if guess! >= randomNum {
